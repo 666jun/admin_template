@@ -1,0 +1,372 @@
+$navTooltipBgColor: rgba(255, 255, 255, 1); //PC导航栏tooltip背景颜色
+$navTooltipBorderColor: rgba(255, 255, 255, 1); //PC导航栏tooltip边框颜色
+$navTooltipArrowColor: rgba(255, 255, 255, 1); //PC导航栏tooltip箭头指示标颜色
+$navTooltipHoverLineColor: rgb(250, 191, 19); //PC导航栏tooltip移入线条颜色
+.el-popover {
+  min-width: 80px;
+  padding: 10px;
+  border-radius: 2px;
+
+  .tooltip-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    div:first-child {
+      margin-top: 0;
+    }
+
+    .menu-items {
+      cursor: pointer;
+      border-radius: 2px;
+      height: 30px;
+      margin-top: 8px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+
+      .menu-items-left, .menu-items-right {
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        max-width: 40px;
+        height: 3px;
+        transition: transform ease .5s;
+      }
+
+      .menu-items-left {
+        left: 0;
+        transform: translateX(-40px);
+      }
+
+      .menu-items-right {
+        right: 0;
+        transform: translateX(40px);
+      }
+    }
+
+    .menu-items:hover {
+      color: #fa9f1c;
+
+      .menu-items-left {
+        transform: translateX(0px);
+      }
+
+      .menu-items-right {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
+
+.el-popover {
+  background-color: $navTooltipBgColor;
+  border-color: $navTooltipBorderColor;
+
+  .popper__arrow::after {
+    border-bottom-color: $navTooltipArrowColor;
+  }
+
+  .tooltip-menu {
+    .menu-items {
+      background: none;
+
+      .menu-items-left, .menu-items-right {
+        background-color: $navTooltipHoverLineColor;
+      }
+    }
+  }
+}
+
+.el-message-box {
+  width: 380px;
+  padding: 20px 0 15px 0;
+
+  .el-message-box__header {
+    padding: 0;
+
+    .el-message-box__headerbtn {
+      top: -5px;
+    }
+  }
+
+  .el-message-box__content {
+    padding: 30px 20px 20px 20px;
+  }
+
+  .el-message-box__btns {
+  }
+}
+
+// 预览图片关闭图标
+.el-image-viewer__close {
+  color: #FFF;
+  font-size: 50px;
+}
+
+
+// 主题格式化 目前不考虑
+:root[theme="darksss"] {
+
+  --El-Input-placeholder: #a2a6ac; //输入框默认提示语字体色
+  --El-Input-Bg: #161A23; //输入框背景色
+  --El-Input-Border: #2b3361; // 输入框边框色
+  --El-Input-Font: #eee; // 输入框字体色
+
+  --El-Select-Bg: #161A23; // 选项框展开背景色
+  --El-Select-Border: #2b3361; // 选项框边框色
+  --El-Select-Font: #eee; // 选项框字体色
+  --El-Select-Hover-Bg: #343C53; // 选项框选项hover背景色
+
+  --El-Cascader-Bg: #161A23; // 级联框展开背景色
+  --El-Cascader-Border: #2b3361; // 级联框边框色
+  --El-Cascader-Font: #eee; // 级联框字体色
+  --El-Cascader-Hover-Bg: #343C53; // 级联框选项hover背景色
+  .el-input__inner {
+    background-color: var(--El-Input-Bg);
+    border-color: var(--El-Input-Border);
+    color: var(--El-Input-Font);
+  }
+
+  //下拉选框的小三角标颜色 (同背景色)
+  .el-popper[x-placement^=bottom] .popper__arrow::after {
+    border-bottom-color: var(--El-Select-Bg);
+  }
+
+  // 选项下拉背景颜色
+  .el-select-dropdown {
+    background-color: var(--El-Select-Bg);
+    border-color: var(--El-Select-Border);
+  }
+
+  // 下拉选项的字体颜色
+  .el-select-dropdown__item {
+    color: var(--El-Select-Font);
+  }
+
+  // 下拉选框hover背景颜色。（鼠标移入颜色）
+  .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: var(--El-Select-Hover-Bg);
+  }
+
+  // 级联下拉背景颜色
+  .el-cascader__dropdown {
+    background-color: var(--El-Cascader-Bg);
+    border-color: var(--El-Cascader-Border);
+  }
+
+  // 级联下拉分割边框的背景颜色
+  .el-cascader-menu {
+    border-color: var(--El-Cascader-Border);
+  }
+
+  // 级联下拉选项的字体颜色
+  .el-cascader-node {
+    color: var(--El-Cascader-Font);
+  }
+
+  // 级联下拉hover背景颜色
+  .el-cascader-node:hover {
+    background-color: var(--El-Cascader-Hover-Bg) !important;
+  }
+
+
+  /********************************************
+   element-ui   button(按钮)
+  ***********************************************/
+  --white-font: #FFF;
+  --primary-color: #0792D2;
+  --warning-color: #E0740A;
+  --success-color: #2EC518;
+  --danger-color: #D54460;
+  --info-color: #8E36FB;
+
+  .el-button {
+    background-color: rgba(#1cbbb4, 0.4);
+    border-color: #1cbbb4;
+    color: var(--white-font);
+  }
+
+  //  element-ui 按钮type为primary的背景颜色(下例如此)
+  .el-button--primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .el-button--danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+
+  .el-button--info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+  }
+
+  .el-button--warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+  }
+
+  .el-button--success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+
+  /********************************************
+  element-ui   tags(标签)
+ ***********************************************/
+  .el-tag {
+    color: var(--white-font);
+  }
+
+  .el-tag--primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-font);
+  }
+
+  .el-tag--danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+
+  .el-tag--info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+  }
+
+  .el-tag--warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+  }
+
+  .el-tag--success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+
+  /********************************************
+    element-ui  pagination (分页组件)
+  ***********************************************/
+
+  --El-Pagination-Bg: #1A2430; //分页按钮背景色
+  --El-Pagination-Border: #687fc1; //分页按钮边框色
+  --El-Pagination-Font: #eee; // 分页按钮字体色
+  --El-Pagination-Active-Bg: #0792D2; //分页按钮选中背景色
+  --El-Pagination-Active-Font: #eee; // 分页按钮选中字体色
+  --El-Pagination-Hover-Bg: #0792D2; //分页按钮hover背景色
+  --El-Pagination-Hover-Font: #eee; // 分页按钮hover字体色
+  // 分页组件上一页，下一页 按钮背景色字体色
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next {
+    background-color: var(--El-Pagination-Bg);
+    color: var(--El-Pagination-Font);
+    border: 1px solid var(--El-Pagination-Border);
+  }
+
+  // 分页组件 点击选中的选项背景色字体色
+  .el-pagination .el-pager li:not(.disabled).active {
+    background-color: var(--El-Pagination-Active-Bg);
+    color: var(--El-Pagination-Active-Font);
+  }
+
+  // 分页组件页码的背景颜色
+  .el-pagination .el-pager .number {
+    background-color: var(--El-Pagination-Bg);
+    border: 1px solid var(--El-Pagination-Border);
+    color: var(--El-Pagination-Font);
+  }
+
+  // 分页组件页码的hover状态
+  .el-pagination .el-pager .number:hover {
+    color: var(--El-Pagination-Hover-Font);
+  }
+
+  // 分页组件页码展开
+  .el-pagination .el-pager .btn-quicknext {
+    background-color: var(--El-Pagination-Bg);
+    border: 1px solid var(--El-Pagination-Border);
+    color: var(--El-Pagination-Font);
+  }
+
+  // 分页组件页码展开按钮的hover状态
+  .el-pagination .el-pager .btn-quicknext:hover {
+    color: var(--El-Pagination-Hover-Font);
+  }
+
+  /********************************************
+    element-ui  table (表格)
+  ***********************************************/
+
+  --El-Table-Bg: #202632; // 表格背景色
+  --El-Table-Hover-Bg: #373C47; // 表格行hover背景色
+  --El-Table-Striped-Bg: #242A36; // 表格斑马行背景色
+  --El-Table-Border: #202632; // 表格边框色
+  --El-Table-Font: #FFF; // 表格字体色
+  --El-Table-Header-Bg: #1C202C; //表格头部背景色
+  --El-Table-Header-Font: #a2a6ac; //表格头部字体色
+  // 表格边框
+  .el-table,
+  .el-table th,
+  .el-table td {
+    border-color: var(--El-Table-Border);
+  }
+
+  // 表格边框
+  .el-table--border:after,
+  .el-table--group:after,
+  .el-table:before {
+    background-color: var(--El-Table-Border);
+  }
+
+  // 表头背景颜色字体颜色
+  .el-table thead {
+    background-color: var(--El-Table-Header-Bg);
+    color: var(--El-Table-Header-Font) !important;
+  }
+
+  // 表格背景颜色 字体颜色
+  .el-table .el-table__body-wrapper {
+    background-color: var(--El-Table-Bg);
+    color: var(--El-Table-Font);
+  }
+
+  // 表格（斑马纹）行背景色
+  .el-table .el-table__body-wrapper tr:nth-child(even) > td {
+    background-color: var(--El-Table-Striped-Bg);
+  }
+
+  .el-table .el-table__row:hover > td {
+    background-color: var(--El-Table-Hover-Bg) !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

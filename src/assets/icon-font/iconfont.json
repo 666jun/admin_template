@@ -1,0 +1,65 @@
+{
+  "id": "2158245",
+  "name": "web_template",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3860895",
+      "name": "钱包",
+      "font_class": "qianbao",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "15186572",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "15186573",
+      "name": "钱包",
+      "font_class": "qianbao1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15186579",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "15186583",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "15186584",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "15186593",
+      "name": "主题",
+      "font_class": "zhuti",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "15186597",
+      "name": "设置",
+      "font_class": "management",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

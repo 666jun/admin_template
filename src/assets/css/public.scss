@@ -1,0 +1,232 @@
+//@import "theme";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: var(--El-Input-placeholder)!important;
+  font-size: 13px;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: var(--El-Input-placeholder)!important;
+  font-size: 13px;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: var(--El-Input-placeholder)!important;
+  font-size: 13px;
+}
+
+input::-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: var(--El-Input-placeholder)!important;
+  font-size: 13px;
+}
+
+/***********************************************************************
+ **************             shadow阴影样式                ****************
+ ***********************************************************************/
+//[class*='history'] 意思即为所有的 class为 history 设置一个样式属性
+//[title*='图片']  意思即为所有的元素 title为 图片 设置一个样式属性
+//:not([class*='history']) 顾名思义
+
+.shadow {
+  // 1.属性1阴影的水平偏移  2.属性2阴影的垂直便宜   inset内阴影
+  // 3.属性3阴影的模糊效果  4.属性4阴影的范围
+  box-shadow: 1px 3px 15px 4px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: "";
+  display: block;
+  background: inherit;
+  border-radius: inherit;
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.bg-red {
+  background-color: $red;
+  color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #f37b1d;
+  color: #ffffff;
+}
+
+.bg-yellow {
+  background-color: #fbbd08;
+  color: #333333;
+}
+
+.bg-olive {
+  background-color: #8dc63f;
+  color: #ffffff;
+}
+
+.bg-green {
+  background-color: #39b54a;
+  color: #ffffff;
+}
+
+.bg-cyan {
+  background-color: #1cbbb4;
+  color: #ffffff;
+}
+
+.bg-blue {
+  background-color: #0081ff;
+  color: #ffffff;
+}
+
+.bg-purple {
+  background-color: #6739b6;
+  color: #ffffff;
+}
+
+.bg-mauve {
+  background-color: #9c26b0;
+  color: #ffffff;
+}
+
+.bg-pink {
+  background-color: #e03997;
+  color: #ffffff;
+}
+
+.bg-brown {
+  background-color: #a5673f;
+  color: #ffffff;
+}
+
+.bg-grey {
+  background-color: #8799a3;
+  color: #ffffff;
+}
+
+.bg-gray {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.bg-black {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+
+.bg-thin-red {
+  color: #e54d42;
+  background-color: #fadbd9;
+}
+
+.bg-thin-orange {
+  color: #f37b1d;
+  background-color: #fde6d2;
+}
+
+.bg-thin-yellow {
+  color: #fbbd08;
+  background-color: #fef2ced2;
+}
+
+.bg-thin-olive {
+  color: #8dc63f;
+  background-color: #e8f4d9;
+}
+
+.bg-thin-green {
+  color: #39b54a;
+  background-color: #d7f0dbff;
+}
+
+.bg-thin-cyan {
+  color: #1cbbb4;
+  background-color: #d2f1f0;
+}
+
+.bg-thin-blue {
+  color: #0081ff;
+  background-color: #cce6ff;
+}
+
+.bg-thin-purple {
+  color: #6739b6;
+  background-color: #e1d7f0;
+}
+
+.bg-thin-mauve {
+  color: #9c26b0;
+  background-color: #ebd4ef;
+}
+
+.bg-thin-pink {
+  color: #e03997;
+  background-color: #f9d7ea;
+}
+
+.bg-thin-brown {
+  color: #a5673f;
+  background-color: #ede1d9;
+}
+
+.bg-thin-grey {
+  color: #8799a3;
+  background-color: #e7ebed;
+}
+
+.bg-gradual-red {
+  background-image: linear-gradient(45deg, #f43f3b, #ec008c);
+  color: #ffffff;
+}
+
+.bg-gradual-orange {
+  background-image: linear-gradient(45deg, #ff9700, #ed1c24);
+  color: #ffffff;
+}
+
+.bg-gradual-green {
+  background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+  color: #ffffff;
+}
+
+.bg-gradual-purple {
+  background-image: linear-gradient(45deg, #9000ff, #5e00ff);
+  color: #ffffff;
+}
+
+.bg-gradual-pink {
+  background-image: linear-gradient(45deg, #ec008c, #6739b6);
+  color: #ffffff;
+}
+
+.bg-gradual-blue {
+  background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
+  color: #ffffff;
+}
+
+
+
+
+
+

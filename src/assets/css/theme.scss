@@ -1,0 +1,52 @@
+$red: #e54d42; //嫣红
+$orange: #f37b1d; //桔橙
+$yellow: #fbbd08; //明黄
+$olive: #8dc63f; //橄榄
+$green: #39b54a; //森绿
+$cyan: #1cbbb4; //天青
+$bule: #0081ff; //海蓝
+$purple: #6739b6; //姹紫
+$mauve: #9c26b0; //木槿
+$pink: #e03997; //桃粉
+$brown: #a5673f; //棕褐
+$grey: #8799a3; //玄灰
+$gray: #aaaaaa; //草灰
+$black: #333333; //墨黑
+$bule-thin: #cce6ff;
+
+// 默认主题
+:root[theme='default'] {
+  // 通用配置
+  --Bg-Color: #FFF;
+  --Font-Color1: #000;
+  --Font-Color2: #FFF;
+  // 通用配置 --边框
+  --Border-Color: #f3f3f3;
+  // 通用配置 --页面组件背景色调1
+  --Page-Bg1: #FFF;
+
+  //header 组件
+  --Header-Bg:#FFF;
+  --Header-Img-Bg:#1cbbb4;
+  // main 容器
+  --Main-Bg: #F5f5f5;
+  //侧栏
+  --Aside-Bg: #304156;
+  --Aside-Child-Bg: #2a3849;
+  --Aside-Font: rgb(191, 203, 217);
+  --Aside-Active: #1F2D3D;
+  --Aside-Active-Font: #409EFF;
+  //路由导航列HistoryRoute
+  --Route-Bg: #ffffff;
+  --Route-Item-Bg: rgb(28, 187, 180);
+  --Dot-Bg: rgba(28, 187, 180, .3);
+  --Route-Item-Thin-Bg: rgb(210, 241, 240);
+  --Dot-Active-Bg: rgba(210, 241, 240, 0.4);
+  --Route-Item-Font: #ffffff;
+}
+
+
+// 暗夜黑
+:root[theme='dark'] {
+
+}
